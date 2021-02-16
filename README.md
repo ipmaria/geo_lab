@@ -1,4 +1,4 @@
-# geo_lab
+# Geo lab
 
 ## Setup using conda
 
@@ -31,3 +31,15 @@ python -c 'import torch; print(torch.version.cuda)'
 # chech torch GPU
 # See question: https://stackoverflow.com/questions/48152674/how-to-check-if-pytorch-is-using-the-gpu
 python -c 'import torch; print(torch.rand(2,3).cuda())'
+```
+
+## use Jupyter remotely
+
+```sh
+# ssh port forwarding
+ssh -L localhost:8888:localhost:8889 servername
+# activate env
+conda activate envname
+# Map a jupyter process to port 8889 on server
+jupyter notebook --no-browser --port=8889
+```
