@@ -21,7 +21,7 @@ pip install git+git://github.com/skoch9/meshplot.git@0.4.0
 # install jupyter and others
 pip install jupyter numpy matplotlib pythreejs
 # add envname kernel to jupyter
-python -m ipykernel install --user --name=geolab
+python -m ipykernel install --user --name=envname
 
 # install pytorch
 # instead of 10.1 use a current version of cuda, see nvidia-smi
